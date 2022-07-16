@@ -12,7 +12,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public DBHelper(Context context) {
         super(context, "contact.db", null, 1);
     }
-
+    
     @Override
     public void onCreate(SQLiteDatabase DB) {
         DB.execSQL("create Table user(email TEXT primary key , password TEXT, secret TEXT)");

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
     tools:context=".login">
-
+    
     <TextView
         android:id="@+id/textView_sign_up"
         android:layout_width="138dp"

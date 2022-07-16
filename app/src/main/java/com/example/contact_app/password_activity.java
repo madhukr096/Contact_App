@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class password_activity extends AppCompatActivity {
-
+    
     EditText username;
     Button reset;
     DBHelper DB;

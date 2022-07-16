@@ -15,7 +15,7 @@ public class login extends AppCompatActivity {
     TextView signup1,forgot;
     Button signin1;
     DBHelper DB;
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     Button signup;
     DBHelper DB;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

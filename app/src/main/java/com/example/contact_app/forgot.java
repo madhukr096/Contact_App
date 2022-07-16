@@ -16,7 +16,7 @@ public class forgot extends AppCompatActivity {
     EditText email,pass, cpass;
     Button forgot;
     DBHelper DB;
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

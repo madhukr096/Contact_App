@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class contact extends AppCompatActivity {
     EditText name,phone,email2;
-    Button save, my_contact,deletion;
+    Button save, my_contact;
     Database DB1;
 
 
@@ -27,7 +27,6 @@ public class contact extends AppCompatActivity {
         email2=(EditText)findViewById(R.id.email2);
         save=(Button)findViewById(R.id.save);
         my_contact=(Button)findViewById(R.id.my_contact);
-        deletion=(Button)findViewById(R.id.delete);
         DB1=new Database(this);
 
         save.setOnClickListener(new View.OnClickListener() {
@@ -49,20 +48,7 @@ public class contact extends AppCompatActivity {
                 }
             }
         });
-        deletion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Integer deletedRows=DB1.deleteData();
-                if(deletedRows>0)
-                {
-                    Toast.makeText(contact.this, "Data Deleted", Toast.LENGTH_SHORT).show();
-                }
-                else
-                {
-                    Toast.makeText(contact.this, "Data Not Deleted", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+        
         my_contact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

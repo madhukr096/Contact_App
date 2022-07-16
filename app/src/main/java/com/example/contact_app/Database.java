@@ -43,8 +43,4 @@ public class Database  extends SQLiteOpenHelper {
         Cursor cursor=DB1.rawQuery("select * from contact", null);
         return cursor;
     }
-    public Integer deleteData(){
-        SQLiteDatabase DB1 = this.getWritableDatabase();
-        return DB1.delete("contact",null,null);
-    }
 }
